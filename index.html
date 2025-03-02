@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv=" X-UA_Compatible" content="IE=edge">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title> Personal Portfolio Website  </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/10e60c3e0a.js" crossorigin="anonymous"></script>
+    <title>Searchable Dropdown</title>
+</head>
+<body>  
+<div id = "header">
+    <div class="container">
+        <nav>
+            <img src="images/ensembl_logo.png" class="logo">
+            
+            <ul id ="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#BLAST">BLAST/BLAT</a></li>
+                <li><a href="VEP.html">VEP</a></li>
+                <li><a href="#Projects">My Projects</a></li>
+                <li><a href="#Help">Help</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <i class="fa-solid fa-xmark" onclick = "closemenu()"></i> <!-- for smaller screen -->
+            </ul>
+        </nav>
+         <div class="header-text">
+            <p>Unveiling the genome</p>
+            <h1><span>one base at a time </span></h1>
+         </div>
+    </div>
+</div>
+<head>
+    
+    <style>
+        /* Style for non-selectable section labels */
+        option.label-option {
+            font-weight: bold;
+            color: gray;
+            pointer-events: none;
+        }
+    </style>
+<body>
+    <section id="search-section">
+        <div class="search-container">
+            <div class="search-title">Search</div>
+        <input type = "text" name = "SearchableList" id = "SearchableList" list = "list-of-species" placeholder="Select a species...">
+        <button id="go-button">Go</button>
+
+        <datalist id = "list-of-species"> 
+
+        <!-- Favorites-->
+        <option value="---Favorites---" ></option>
+        <option value = "All Species"></option>
+        <option value = "Human"></option>
+        <option value = "Mouse"></option>
+        <option value = "Zebrafish"></option>
+          <!-- Primates Section -->
+        <option value="---Primates---" ></option>
+        <option value = "Chimpanzee"></option>
+        <option value = "Gibbon"></option>
+        <option value = "Macaque"></option>
+
+         <!-- Rodents Section -->
+         <option value="---Rodents---" ></option>
+         <option value = "American Beaver"></option>
+         <option value = "Eurasian Red Squirrel"></option>
+         <option value = "Rat"></option>
+
+        </datalist>
+        </div>
+    </section>
+</body>
+</section>
+<!-- Footer Section -->
+<footer>
+    <p>Ensembl release 113 - October 2024</p>
+</footer>
+</head>
